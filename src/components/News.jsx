@@ -3,6 +3,7 @@ import moment from "moment"
 import React from "react"
 import { useGetCryptoNewsQuery } from "../app/service/cryptoNewsApi"
 import demoImage from "../images/demoImage.jpg"
+import Loader from "./Loader"
 const { Text, Title } = Typography
 const { Option } = Select
 
@@ -10,7 +11,7 @@ const News = ({ simplified }) => {
   const { data } = useGetCryptoNewsQuery()
   const cryptoNews = simplified ? data?.slice(0, 5) : data
 
-  if (!data) return "Loading...."
+  if (!data) return <Loader />
 
   return (
     <Row gutter={[24, 24]}>

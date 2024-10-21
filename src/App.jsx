@@ -50,10 +50,6 @@ const App = () => {
           element: <Homepage />,
         },
         {
-          path: "/exchanges",
-          element: <Exchanges />,
-        },
-        {
           path: "/cryptocurrencies",
           element: <Cryptocurrencies />,
         },
