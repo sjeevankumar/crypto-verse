@@ -12,21 +12,9 @@ export const cryptoApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_CRYPTO_API_URL }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
-      query: () => createRequest("/coins"),
+      query: (count) => createRequest(`/coins?limit=${count}`),
     }),
   }),
 })
 
 export const { useGetCryptosQuery } = cryptoApi
-
-// const options = {
-//     method: 'GET',
-//     url: 'https://coinranking1.p.rapidapi.com/stats',
-//     params: {
-//       referenceCurrencyUuid: 'yhjMzLPhuIDl'
-//     },
-//     headers: {
-//       'x-rapidapi-key': '1689925f46msh11a0de77008c5b3p1b8528jsnee19ab85c670',
-//       'x-rapidapi-host': 'coinranking1.p.rapidapi.com'
-//     }
-//   };
