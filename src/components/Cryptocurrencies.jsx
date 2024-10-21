@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react"
-import { useGetCryptosQuery } from "../app/service/cryptoApi"
 import { Card, Col, Input, Row } from "antd"
-import { Link } from "react-router-dom"
 import millify from "millify"
+import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+import { useGetCryptosQuery } from "../app/service/cryptoApi"
 import Loader from "./Loader"
 
 const Cryptocurrencies = ({ simplified }) => {

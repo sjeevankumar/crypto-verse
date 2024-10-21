@@ -2,14 +2,13 @@ import { Avatar, Button, Menu, Typography } from "antd"
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-import icon from "../images/cryptocurrency.png"
 import {
   BulbOutlined,
   FundOutlined,
   HomeOutlined,
-  MenuOutlined,
-  MoneyCollectOutlined,
+  MenuOutlined
 } from "@ant-design/icons"
+import icon from "../images/cryptocurrency.png"
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true)

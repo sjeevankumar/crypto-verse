@@ -1,8 +1,8 @@
-import React from "react"
 import { Col, Row, Typography } from "antd"
 import { Chart as ChartJS, registerables } from "chart.js"
-ChartJS.register(...registerables)
+import React from "react"
 import { Line } from "react-chartjs-2"
+ChartJS.register(...registerables)
 
 const { Title } = Typography
 

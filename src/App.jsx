@@ -1,20 +1,19 @@
+import { Space, Typography } from "antd"
 import React from "react"
-import {
-  Cryptocurrencies,
-  CryptoDetails,
-  Exchanges,
-  Homepage,
-  Navbar,
-  News,
-} from "./components"
-import "./App.css"
 import {
   createBrowserRouter,
   Link,
   Outlet,
   RouterProvider,
 } from "react-router-dom"
-import { Space, Typography } from "antd"
+import "./App.css"
+import {
+  Cryptocurrencies,
+  CryptoDetails,
+  Homepage,
+  Navbar,
+  News
+} from "./components"
 
 const App = () => {
   const Layout = () => {

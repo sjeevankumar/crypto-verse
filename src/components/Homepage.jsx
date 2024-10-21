@@ -1,11 +1,11 @@
 import { Col, Row, Statistic, Typography } from "antd"
-import React from "react"
-import { useGetCryptosQuery } from "../app/service/cryptoApi"
 import millify from "millify"
+import React from "react"
 import { Link } from "react-router-dom"
+import { useGetCryptosQuery } from "../app/service/cryptoApi"
 import Cryptocurrencies from "./Cryptocurrencies"
-import News from "./News"
 import Loader from "./Loader"
+import News from "./News"
 
 const { Title } = Typography
 

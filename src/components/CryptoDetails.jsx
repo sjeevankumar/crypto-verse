@@ -1,10 +1,3 @@
-import React, { useState } from "react"
-import { useParams } from "react-router-dom"
-import {
-  useGetCryptoDetailsQuery,
-  useGetCryptoHistoryQuery,
-} from "../app/service/cryptoApi"
-import { Col, Row, Select, Typography } from "antd"
 import {
   CheckOutlined,
   DollarCircleOutlined,
@@ -16,7 +9,14 @@ import {
   ThunderboltOutlined,
   TrophyOutlined,
 } from "@ant-design/icons"
+import { Col, Row, Select, Typography } from "antd"
 import millify from "millify"
+import React, { useState } from "react"
+import { useParams } from "react-router-dom"
+import {
+  useGetCryptoDetailsQuery,
+  useGetCryptoHistoryQuery,
+} from "../app/service/cryptoApi"
 import LineChart from "./LineChart"
 import Loader from "./Loader"
 
