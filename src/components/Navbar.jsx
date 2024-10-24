@@ -6,13 +6,13 @@ import {
   BulbOutlined,
   FundOutlined,
   HomeOutlined,
-  MenuOutlined
+  MenuOutlined,
 } from "@ant-design/icons"
 import icon from "../images/cryptocurrency.png"
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true)
-  const [screenSize, setScreenSize] = useState(null)
+  const [screenSize, setScreenSize] = useState(window.innerWidth)
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth)

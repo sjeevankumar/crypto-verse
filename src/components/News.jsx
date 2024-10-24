@@ -38,7 +38,7 @@ const News = ({ simplified }) => {
                 <div>
                   <Avatar src={news?.media[0] || demoImage} alt="" />
                   <Text className="provider-name">
-                    {news?.authors[0]?.name}
+                    {news?.authors ? news?.authors[0]?.name : "Unknown"}
                   </Text>
                 </div>
                 <Text>{moment(news?.published).startOf("ss").fromNow()}</Text>
